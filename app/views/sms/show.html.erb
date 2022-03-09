@@ -8,4 +8,9 @@
     <%= form.text_area :message %>
     <%= form.submit "Send Message" %>
   <% end %>
+  <% flash.each do |type, msg| %>
+    <div>
+      <%= msg %>
+    </div>
+  <% end %>
 </article>
