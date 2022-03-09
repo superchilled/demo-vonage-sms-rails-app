@@ -27,10 +27,10 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-# Interact with Vonage Communication APIs
+# Interact with Vonage Communication APIs [https://github.com/Vonage/vonage-ruby-sdk]
 gem "vonage"
 
-# Shim to load environment variables from .env into ENV in development.
+# Shim to load environment variables from .env into ENV in development. [https://github.com/bkeepers/dotenv]
 gem 'dotenv-rails', groups: [:development, :test]
 
 # Use Redis adapter to run Action Cable in production
