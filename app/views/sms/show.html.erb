@@ -1,0 +1,11 @@
+<article class="sms-form">
+  <h1>Vonage SMS API Demo</h1>
+
+  <%= form_with url: "/sms", method: :post do |form| %>
+    <%= form.label :number, "Number:" %>
+    <%= form.text_field :number %>
+    <%= form.label :message, "Message:" %>
+    <%= form.text_area :message %>
+    <%= form.submit "Send Message" %>
+  <% end %>
+</article>
