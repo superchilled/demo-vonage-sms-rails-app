@@ -3,13 +3,13 @@
 
   <%= form_with url: "/sms", method: :post do |form| %>
     <%= form.label :number, "Number:" %>
-    <%= form.text_field :number %>
+    <%= form.text_field :number, :required => true %>
     <%= form.label :message, "Message:" %>
-    <%= form.text_area :message %>
+    <%= form.text_area :message, :required => true %>
     <%= form.submit "Send Message" %>
   <% end %>
   <% flash.each do |type, msg| %>
-    <div>
+    <div class="flash-notice">
       <%= msg %>
     </div>
   <% end %>
