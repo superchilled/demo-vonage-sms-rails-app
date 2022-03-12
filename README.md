@@ -1,24 +1,36 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a demo app for sending an SMS via the [Vonage SMS API](https://developer.vonage.com/messaging/sms/overview) using the [Vonage Ruby SDK](https://github.com/Vonage/vonage-ruby-sdk)
 
-Things you may want to cover:
+**Note:** this app is not intended for production use.
 
-* Ruby version
+To use the app locally:
 
-* System dependencies
+1. Clone the repo
 
-* Configuration
+```
+git clone https://github.com/superchilled/demo-vonage-sms-rails-app.git
+```
 
-* Database creation
+2. Install the dependencies (note: the app is built in Rails 7, so you should be running Ruby 2.7.0 or newer)
 
-* Database initialization
+```
+bundle install
+```
 
-* How to run the test suite
+3. Create a [Vonage developer account](https://dashboard.nexmo.com/sign-up) to get your API key and secret
 
-* Services (job queues, cache servers, search engines, etc.)
+4. Create a `.env` file in the root of the project and add your API key and secret in the following format (replacing the values with your own API key and secret):
 
-* Deployment instructions
+```
+VONAGE_API_KEY=abc123
+VONAGE_API_SECRET=ab12CD34xyz
+```
 
-* ...
+5. Start the Rails server
+
+```
+rails server
+```
+
+6. Navigate to port 3000 on localhost in your browser: http://localhost:3000/
